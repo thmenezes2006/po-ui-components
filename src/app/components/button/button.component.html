@@ -1,0 +1,9 @@
+<button
+  [ngClass]="[variant, size, color]"
+  [disabled]="disabled"
+  [type]="type"
+  (click)="clickAlert(text)"
+>
+  <i class="{{ icon }}"></i>
+  {{ text }}
+</button>

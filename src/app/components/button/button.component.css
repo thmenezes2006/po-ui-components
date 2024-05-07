@@ -1,0 +1,96 @@
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 0 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  --color-disabled: rgb(172, 171, 171);
+  --text-color-disabled: rgb(87, 85, 85);
+}
+button:focus {
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: rgb(20, 20, 19);
+}
+.large {
+  min-height: 3.5em;
+}
+.medium {
+  min-height: 2.75em;
+}
+.small {
+  min-height: 2em;
+}
+.danger {
+  --color: rgb(160, 47, 47);
+  --text-color: #fff;
+  --hover-solid-color: rgb(119, 23, 23);
+  --hover-outline-color: rgb(252, 200, 200);
+  --outline-color-pressed: rgb(207, 138, 138);
+  --color-pressed: rgb(75, 16, 16);
+}
+.primary {
+  --color: rgb(61, 81, 192);
+  --text-color: #fff;
+  --hover-solid-color: rgb(19, 31, 124);
+  --hover-outline-color: rgb(182, 186, 226);
+  --outline-color-pressed: rgb(138, 143, 207);
+  --color-pressed: rgb(11, 19, 87);
+}
+
+.btn-solid {
+  color: var(--text-color);
+  background-color: var(--color);
+  border: 2px solid var(--color);
+}
+.btn-solid:hover {
+  background-color: var(--hover-solid-color);
+  border-color: var(--hover-solid-color);
+}
+
+.btn-solid:active {
+  background-color: var(--color-pressed);
+  border: 2px solid var(--color-pressed);
+}
+.btn-border {
+  background-color: transparent;
+  color: var(--color);
+  border: 2px solid var(--color);
+}
+.btn-border:hover {
+  background-color: var(--hover-outline-color);
+}
+.btn-border:active {
+  background-color: var(--outline-color-pressed);
+}
+.tertiary {
+  color: var(--color);
+  background-color: transparent;
+  border: transparent;
+}
+.tertiary:hover {
+  background-color: var(--hover-outline-color);
+  border-color: var(--primary-hover-color);
+}
+
+.tertiary:active {
+  background-color: var(--outline-color-pressed);
+}
+.tertiary:disabled {
+  background-color: transparent;
+  color: var(--color-disabled);
+  cursor: not-allowed;
+}
+.btn-solid:disabled {
+  color: var(--text-color-disabled);
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
+}
+.btn-border:disabled {
+  color: var(--color-disabled);
+  background-color: transparent;
+  border-color: var(--color-disabled);
+  cursor: not-allowed;
+}

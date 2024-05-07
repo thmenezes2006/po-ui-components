@@ -1,0 +1,146 @@
+<po-page-default p-title="PO UI">
+  <div>
+    <h2>Buttons</h2>
+    <div>
+      <app-button
+        variant="btn-solid"
+        color="primary"
+        size="small"
+        text="Primary Small"
+        icon="fas fa-search"
+      />
+      <app-button
+        variant="btn-solid"
+        color="primary"
+        text="Primary Medium"
+        icon="fas fa-search"
+      />
+      <app-button
+        variant="btn-solid"
+        color="primary"
+        size="large"
+        text="Primary Large"
+        icon="fas fa-search"
+      />
+    </div>
+
+    <div>
+      <app-button
+        variant="btn-border"
+        color="primary"
+        size="small"
+        text="Primary Small"
+        icon="fas fa-search"
+      />
+      <app-button
+        variant="btn-border"
+        color="primary"
+        text="Primary Medium"
+        icon="fas fa-search"
+      />
+      <app-button
+        variant="btn-border"
+        color="primary"
+        size="large"
+        text="Primary Large"
+        icon="fas fa-search"
+      />
+    </div>
+
+    <div>
+      <app-button
+        variant="btn-solid"
+        color="danger"
+        size="small"
+        text="Danger Small"
+      />
+      <app-button variant="btn-solid" color="danger" text="Danger Medium" />
+      <app-button
+        variant="btn-solid"
+        color="danger"
+        size="large"
+        text="Danger Large"
+      />
+    </div>
+
+    <div>
+      <app-button
+        variant="btn-border"
+        color="danger"
+        size="small"
+        text="Danger Small"
+      />
+      <app-button variant="btn-border" color="danger" text="Danger Medium" />
+      <app-button
+        variant="btn-border"
+        color="danger"
+        size="large"
+        text="Danger Large"
+      />
+    </div>
+
+    <div>
+      <app-button
+        variant="tertiary"
+        color="danger"
+        size="small"
+        text="Tertiary Small"
+      />
+      <app-button variant="tertiary" color="danger" text="Tertiary Medium" />
+      <app-button
+        variant="tertiary"
+        color="danger"
+        size="large"
+        text="Tertiary Large"
+      />
+    </div>
+
+    <div>
+      <app-button variant="tertiary" size="small" text="Tertiary Small" />
+      <app-button variant="tertiary" text="Tertiary Medium" />
+      <app-button variant="tertiary" size="large" text="Tertiary Large" />
+    </div>
+
+    <div>
+      <app-button color="danger" icon="fas fa-search" />
+      <app-button icon="fas fa-search" />
+      <app-button variant="tertiary" icon="fas fa-search" />
+      <app-button variant="tertiary" color="danger" icon="fas fa-search" />
+    </div>
+
+<div>
+  <app-button
+    variant="btn-border"
+    color="danger"
+    disabled="true"
+    text="Border Disabled"
+  />
+  <app-button
+    variant="btn-solid"
+    color="danger"
+    text="Solid Disabled"
+    disabled="true"
+  />
+  <app-button
+    variant="tertiary"
+    color="danger"
+    text="Tertiary Disabled"
+    disabled="true"
+  />
+
+</div>
+  </div>
+  <div>
+    <h2>Selects</h2>
+    <app-select
+      [options]="selectOptions"
+      (optionSelected)="onOptionSelected($event)"
+    />
+    <app-select
+      [hasError]="true"
+      [options]="selectOptions"
+      [placeholder]="'Escolha uma opção'"
+      (optionSelected)="onOptionSelected($event)"
+    />
+  </div>
+</po-page-default>
